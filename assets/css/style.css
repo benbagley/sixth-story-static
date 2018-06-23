@@ -37,6 +37,37 @@ i { font-size: 24px; }
 .navbar { z-index: 999; }
 .navbar-toggler { border: none; }
 
+.navbar-toggler,
+.navbar-brand {
+  z-index: 999;
+}
+
+.navbar-collapse {
+  height: 100vh !important;
+  background: #5a2ed6;
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  left: 0;
+  top: 0;
+}
+
+.navbar-nav { width: 100vw; }
+
+.nav-item {
+  transition: .2s background ease-in-out;
+  text-align: center;
+  padding: 2rem;
+}
+
+.nav-item a {
+  color: #FFF !important;
+  font-size: 24px;
+}
+
+.nav-item a:hover { color: #5a2ed6 !important; }
+.nav-item:hover { background: #FFF; }
+
 /** MASTHEAD **/
 #masthead {
   background-image: url("../images/masthead_bg.png");
@@ -141,10 +172,7 @@ button[type="submit"] {
   border: 0;
 }
 
-button:hover {
-  /* background: #5129C1 !important; */
-  background: #361C80 !important;
-}
+#contact button:hover { background: #361C80 !important; }
 
 #contact i {
   margin-right: 1rem;
@@ -171,7 +199,7 @@ footer {
 
 footer a { padding: 0 1rem; }
 
-footer .social-icons a {
+.social-icons a {
   transition: .2s background ease-in-out;
   justify-content: center;
   text-decoration: none;
@@ -190,7 +218,7 @@ footer .col-sm:nth-child(2) {
   display: flex;
 }
 
-footer .social-icons a:hover { background: #361C80 !important; }
+.social-icons a:hover { background: #361C80 !important; }
 
 @media (min-width: 768px) {
   .navbar-brand { font-size: 26px; }
