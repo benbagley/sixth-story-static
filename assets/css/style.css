@@ -53,11 +53,12 @@ i { font-size: 24px; }
 }
 
 .navbar-nav { width: 100vw; }
+.navbar-nav .social-icons { padding-top: 4rem; }
 
 .nav-item {
   transition: .2s background ease-in-out;
   text-align: center;
-  padding: 2rem;
+  padding: 0.5rem 0;
 }
 
 .nav-item a {
