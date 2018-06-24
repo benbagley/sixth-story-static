@@ -19,6 +19,8 @@ button:focus { outline: none; }
 .text-black { color: #000 !important; }
 .text-white { color: #fff; }
 
+.hidden { display: none; }
+
 img {
   margin: 0 auto;
   display: flex;
@@ -110,12 +112,61 @@ i { font-size: 24px; }
 }
 
 /** WHAT WE DO **/
-.who-are-do_grid { height: 400px; }
+#what-we-do a { text-decoration: none; }
+
+.who-are-do_grid {
+  transition: .2s background ease-in-out;
+  height: 400px;
+}
 
 .who-are-do_grid h2 {
   border-bottom: 8px solid #fff;
   padding-bottom: 10px;
   width: 220px;
+}
+
+.who-are-do_grid.pink-background:hover {
+  background: #E6273B !important;
+}
+
+.who-are-do_grid.green-background:hover {
+  background: #00CCA2 !important;
+}
+
+.who-are-do_grid.purple-background:hover {
+  background: #5129C1 !important;
+}
+
+
+.who-are-do_grid button {
+  background: transparent;
+  border: 0;
+}
+
+.more-info-close i {
+  justify-content: flex-end;
+  padding: 2rem 0;
+  display: flex;
+  color: #FFF;
+  width: 89vw;
+}
+
+.who-are-do_grid .more-info {
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.who-are-do_grid .more-info .content {
+  padding: 0 20px 0 20px;
+  margin: 3rem 2rem;
+}
+
+.who-are-do_grid .more-info h2 {
+  border: none;
+  width: auto;
 }
 
 /** OUR CLIENTS **/
@@ -235,9 +286,18 @@ footer .col-sm:nth-child(2) {
   }
 
   #who-are-we,
-  #our-clients { padding: 100px 70px; }
+  #our-clients { padding: 160px 70px; }
   
   #who-are-we p { width: 23rem; }
+
+  .who-are-do_grid .more-info {
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+
+  .who-are-do_grid .h2-display { display: block; }
+  .more-info .content { margin: 5rem 2rem !important; }
   
   #who-are-we img { width: 50% !important; }
   #our-clients img { width: 30% !important; }
